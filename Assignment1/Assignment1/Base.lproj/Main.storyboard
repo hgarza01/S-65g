@@ -15,11 +15,11 @@
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="tsR-hK-woN">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gK-g9-Mbb" userLabel="LifeGrid">
-                                <rect key="frame" x="60" y="60" width="480" height="480"/>
+                                <rect key="frame" x="80" y="55" width="441" height="441"/>
                                 <color key="backgroundColor" red="0.13870966144459196" green="0.52368103998295157" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <accessibility key="accessibilityConfiguration" identifier="LifeGrid"/>
                                 <constraints>
@@ -87,12 +87,122 @@
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="o8w-Qc-1Gy">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <subviews>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="mtb-WB-qTJ" userLabel="Grid Size">
+                                        <rect key="frame" x="18" y="20" width="118" height="31"/>
+                                    </slider>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="XIn-dM-2TB" userLabel="Frames/second">
+                                        <rect key="frame" x="18" y="85" width="118" height="31"/>
+                                        <accessibility key="accessibilityConfiguration" label=""/>
+                                    </slider>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bOW-dK-wDC" userLabel="Generation">
+                                        <rect key="frame" x="253" y="20" width="97" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yk1-VM-pn2">
+                                        <rect key="frame" x="282" y="85" width="39" height="30"/>
+                                        <state key="normal" title="Reset">
+                                            <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                    </button>
+                                </subviews>
                                 <color key="backgroundColor" red="0.33227979248754758" green="0.79601071058872475" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="bOW-dK-wDC" firstAttribute="centerY" secondItem="o8w-Qc-1Gy" secondAttribute="centerY" id="6hi-f9-4Jf">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="21.5"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="20"/>
+                                    </constraint>
+                                    <constraint firstItem="XIn-dM-2TB" firstAttribute="top" secondItem="mtb-WB-qTJ" secondAttribute="bottom" constant="10" id="HMe-76-eci"/>
+                                    <constraint firstItem="yk1-VM-pn2" firstAttribute="top" secondItem="bOW-dK-wDC" secondAttribute="bottom" constant="10" id="Lvf-xd-d2M">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="8"/>
+                                    </constraint>
+                                    <constraint firstItem="yk1-VM-pn2" firstAttribute="width" secondItem="mtb-WB-qTJ" secondAttribute="width" id="Mph-UU-oLL">
+                                        <variation key="heightClass=compact-widthClass=compact" constant="-61"/>
+                                        <variation key="heightClass=regular-widthClass=compact" constant="-75"/>
+                                    </constraint>
+                                    <constraint firstItem="mtb-WB-qTJ" firstAttribute="centerX" secondItem="o8w-Qc-1Gy" secondAttribute="centerX" id="OMz-2e-bM3"/>
+                                    <constraint firstItem="XIn-dM-2TB" firstAttribute="leading" secondItem="mtb-WB-qTJ" secondAttribute="leading" id="VJa-8L-rBl"/>
+                                    <constraint firstItem="XIn-dM-2TB" firstAttribute="centerX" secondItem="o8w-Qc-1Gy" secondAttribute="centerX" id="eag-2D-ATa"/>
+                                    <constraint firstItem="bOW-dK-wDC" firstAttribute="centerX" secondItem="o8w-Qc-1Gy" secondAttribute="centerX" id="maM-yG-tir"/>
+                                    <constraint firstItem="bOW-dK-wDC" firstAttribute="width" secondItem="mtb-WB-qTJ" secondAttribute="width" id="nOm-kG-MXV">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="-17"/>
+                                    </constraint>
+                                    <constraint firstItem="yk1-VM-pn2" firstAttribute="centerX" secondItem="o8w-Qc-1Gy" secondAttribute="centerX" id="uaj-xL-CZf"/>
+                                    <constraint firstItem="bOW-dK-wDC" firstAttribute="top" secondItem="XIn-dM-2TB" secondAttribute="bottom" constant="10" id="z6E-tU-gmf"/>
+                                    <constraint firstItem="XIn-dM-2TB" firstAttribute="width" secondItem="mtb-WB-qTJ" secondAttribute="width" id="zll-vx-6SX"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
                                         <integer key="value" value="10"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
+                                <variation key="default">
+                                    <mask key="subviews">
+                                        <exclude reference="mtb-WB-qTJ"/>
+                                        <exclude reference="XIn-dM-2TB"/>
+                                        <exclude reference="bOW-dK-wDC"/>
+                                        <exclude reference="yk1-VM-pn2"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <exclude reference="OMz-2e-bM3"/>
+                                        <exclude reference="HMe-76-eci"/>
+                                        <exclude reference="VJa-8L-rBl"/>
+                                        <exclude reference="eag-2D-ATa"/>
+                                        <exclude reference="zll-vx-6SX"/>
+                                        <exclude reference="6hi-f9-4Jf"/>
+                                        <exclude reference="maM-yG-tir"/>
+                                        <exclude reference="nOm-kG-MXV"/>
+                                        <exclude reference="z6E-tU-gmf"/>
+                                        <exclude reference="Lvf-xd-d2M"/>
+                                        <exclude reference="Mph-UU-oLL"/>
+                                        <exclude reference="uaj-xL-CZf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=compact-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="mtb-WB-qTJ"/>
+                                        <include reference="XIn-dM-2TB"/>
+                                        <include reference="bOW-dK-wDC"/>
+                                        <include reference="yk1-VM-pn2"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="OMz-2e-bM3"/>
+                                        <include reference="HMe-76-eci"/>
+                                        <include reference="VJa-8L-rBl"/>
+                                        <include reference="eag-2D-ATa"/>
+                                        <include reference="zll-vx-6SX"/>
+                                        <include reference="6hi-f9-4Jf"/>
+                                        <include reference="maM-yG-tir"/>
+                                        <include reference="nOm-kG-MXV"/>
+                                        <include reference="z6E-tU-gmf"/>
+                                        <include reference="Lvf-xd-d2M"/>
+                                        <include reference="Mph-UU-oLL"/>
+                                        <include reference="uaj-xL-CZf"/>
+                                    </mask>
+                                </variation>
+                                <variation key="heightClass=regular-widthClass=compact">
+                                    <mask key="subviews">
+                                        <include reference="mtb-WB-qTJ"/>
+                                        <include reference="XIn-dM-2TB"/>
+                                        <include reference="bOW-dK-wDC"/>
+                                        <include reference="yk1-VM-pn2"/>
+                                    </mask>
+                                    <mask key="constraints">
+                                        <include reference="OMz-2e-bM3"/>
+                                        <include reference="HMe-76-eci"/>
+                                        <include reference="VJa-8L-rBl"/>
+                                        <include reference="eag-2D-ATa"/>
+                                        <include reference="zll-vx-6SX"/>
+                                        <include reference="6hi-f9-4Jf"/>
+                                        <include reference="maM-yG-tir"/>
+                                        <include reference="nOm-kG-MXV"/>
+                                        <include reference="z6E-tU-gmf"/>
+                                        <include reference="Lvf-xd-d2M"/>
+                                        <include reference="Mph-UU-oLL"/>
+                                        <include reference="uaj-xL-CZf"/>
+                                    </mask>
+                                </variation>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
