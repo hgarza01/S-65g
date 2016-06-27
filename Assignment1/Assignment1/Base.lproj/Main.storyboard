@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8191" systemVersion="14F1808" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
     </dependencies>
     <scenes>
         <!--Simulation-->
@@ -16,33 +18,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="221" y="279" width="158" height="42"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
-                                <rect key="frame" x="203" y="329" width="195" height="17"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7gK-g9-Mbb" userLabel="LifeGrid">
+                                <rect key="frame" x="60" y="60" width="480" height="480"/>
+                                <color key="backgroundColor" red="0.13870966144459196" green="0.52368103998295157" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <accessibility key="accessibilityConfiguration" identifier="LifeGrid"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="7gK-g9-Mbb" secondAttribute="height" multiplier="1:1" id="ThU-T4-9FA"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="7gK-g9-Mbb" firstAttribute="centerY" secondItem="tsR-hK-woN" secondAttribute="centerY" id="6nH-6c-6vM"/>
+                            <constraint firstItem="7gK-g9-Mbb" firstAttribute="height" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="0.8" priority="750" id="AGM-cH-huW"/>
+                            <constraint firstItem="7gK-g9-Mbb" firstAttribute="width" secondItem="tsR-hK-woN" secondAttribute="width" multiplier="0.8" priority="750" id="Of5-jW-ULl"/>
+                            <constraint firstItem="7gK-g9-Mbb" firstAttribute="width" relation="lessThanOrEqual" secondItem="tsR-hK-woN" secondAttribute="width" multiplier="0.8" id="cM9-xV-3e6"/>
+                            <constraint firstItem="7gK-g9-Mbb" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="df5-9Y-DMZ"/>
+                            <constraint firstItem="7gK-g9-Mbb" firstAttribute="height" relation="lessThanOrEqual" secondItem="tsR-hK-woN" secondAttribute="height" multiplier="0.8" id="wXb-us-x7x"/>
                         </constraints>
+                        <variation key="heightClass=compact-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="6nH-6c-6vM"/>
+                                <include reference="AGM-cH-huW"/>
+                                <include reference="Of5-jW-ULl"/>
+                                <include reference="cM9-xV-3e6"/>
+                                <include reference="df5-9Y-DMZ"/>
+                                <include reference="wXb-us-x7x"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="constraints">
+                                <include reference="6nH-6c-6vM"/>
+                                <include reference="AGM-cH-huW"/>
+                                <include reference="Of5-jW-ULl"/>
+                                <include reference="cM9-xV-3e6"/>
+                                <include reference="df5-9Y-DMZ"/>
+                                <include reference="wXb-us-x7x"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
                     <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="750" y="-321"/>
         </scene>
         <!--InstrumentationViewControllers-->
         <scene sceneID="wg7-f3-ORb">

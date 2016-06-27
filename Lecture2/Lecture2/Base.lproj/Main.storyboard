@@ -76,7 +76,6 @@
         <!--Third View-->
         <scene sceneID="nTv-ym-zi2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VgD-Sy-gSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Third View" id="hQ0-Jt-Dwd" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WXa-M6-dHh"/>
@@ -102,13 +101,13 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VgD-Sy-gSl" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="545" y="1560"/>
         </scene>
         <!--Second View-->
         <scene sceneID="MXz-9h-Xb3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="sUd-Bz-AJ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Second View" id="AX1-w4-s23" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="RXy-CX-5io"/>
@@ -134,6 +133,7 @@
                         </constraints>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sUd-Bz-AJ7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1363" y="466"/>
         </scene>
