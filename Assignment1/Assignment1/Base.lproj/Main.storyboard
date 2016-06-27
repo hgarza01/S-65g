@@ -232,11 +232,9 @@
                                 <exclude reference="o8w-Qc-1Gy"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="FVl-LU-v4t"/>
-                                <exclude reference="Gvd-Ba-pK1"/>
-                                <exclude reference="izm-GY-6R4"/>
-                                <exclude reference="xHl-lg-LUI"/>
-                                <exclude reference="yUQ-Bm-SrB"/>
+                                <exclude reference="LNM-5n-Rga"/>
+                                <exclude reference="S4k-Ve-cOX"/>
+                                <exclude reference="wdS-vf-41h"/>
                                 <exclude reference="6Un-rc-ADl"/>
                                 <exclude reference="7cg-ZD-ETC"/>
                                 <exclude reference="GDp-HD-zDR"/>
@@ -247,9 +245,11 @@
                                 <exclude reference="cEZ-qB-klQ"/>
                                 <exclude reference="t2k-uA-7QI"/>
                                 <exclude reference="u0K-iQ-CeO"/>
-                                <exclude reference="LNM-5n-Rga"/>
-                                <exclude reference="S4k-Ve-cOX"/>
-                                <exclude reference="wdS-vf-41h"/>
+                                <exclude reference="FVl-LU-v4t"/>
+                                <exclude reference="Gvd-Ba-pK1"/>
+                                <exclude reference="izm-GY-6R4"/>
+                                <exclude reference="xHl-lg-LUI"/>
+                                <exclude reference="yUQ-Bm-SrB"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=compact-widthClass=compact">
@@ -258,11 +258,9 @@
                                 <include reference="o8w-Qc-1Gy"/>
                             </mask>
                             <mask key="constraints">
-                                <exclude reference="FVl-LU-v4t"/>
-                                <exclude reference="Gvd-Ba-pK1"/>
-                                <exclude reference="izm-GY-6R4"/>
-                                <include reference="xHl-lg-LUI"/>
-                                <include reference="yUQ-Bm-SrB"/>
+                                <include reference="LNM-5n-Rga"/>
+                                <exclude reference="S4k-Ve-cOX"/>
+                                <include reference="wdS-vf-41h"/>
                                 <include reference="6Un-rc-ADl"/>
                                 <exclude reference="7cg-ZD-ETC"/>
                                 <exclude reference="GDp-HD-zDR"/>
@@ -273,9 +271,11 @@
                                 <include reference="cEZ-qB-klQ"/>
                                 <exclude reference="t2k-uA-7QI"/>
                                 <include reference="u0K-iQ-CeO"/>
-                                <include reference="LNM-5n-Rga"/>
-                                <exclude reference="S4k-Ve-cOX"/>
-                                <include reference="wdS-vf-41h"/>
+                                <exclude reference="FVl-LU-v4t"/>
+                                <exclude reference="Gvd-Ba-pK1"/>
+                                <exclude reference="izm-GY-6R4"/>
+                                <include reference="xHl-lg-LUI"/>
+                                <include reference="yUQ-Bm-SrB"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -284,15 +284,15 @@
                                 <include reference="o8w-Qc-1Gy"/>
                             </mask>
                             <mask key="constraints">
-                                <include reference="FVl-LU-v4t"/>
-                                <include reference="Gvd-Ba-pK1"/>
-                                <include reference="izm-GY-6R4"/>
+                                <include reference="S4k-Ve-cOX"/>
                                 <include reference="7cg-ZD-ETC"/>
                                 <include reference="GDp-HD-zDR"/>
                                 <include reference="R9l-RZ-v6A"/>
                                 <include reference="ZSf-ze-BHP"/>
                                 <include reference="t2k-uA-7QI"/>
-                                <include reference="S4k-Ve-cOX"/>
+                                <include reference="FVl-LU-v4t"/>
+                                <include reference="Gvd-Ba-pK1"/>
+                                <include reference="izm-GY-6R4"/>
                             </mask>
                         </variation>
                     </view>
