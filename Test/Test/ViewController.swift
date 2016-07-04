@@ -1,8 +1,8 @@
 //
 //  ViewController.swift
-//  Lecture3
+//  Test
 //
-//  Created by Garza, Horacio on 6/27/16.
+//  Created by Garza, Horacio on 6/29/16.
 //  Copyright © 2016 Horacio Garza. All rights reserved.
 //
 
@@ -10,11 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBAction func buttonClicked(sender: AnyObject) {
-        print ("We were clicked")
-    }
-    @IBOutlet weak var textView: UITextView!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
