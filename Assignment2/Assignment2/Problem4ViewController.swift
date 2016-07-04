@@ -9,6 +9,7 @@
 import UIKit
 
 class Problem4ViewController: UIViewController {
+    @IBOutlet weak var Problem4Text: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,7 +22,6 @@ class Problem4ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
-
     /*
     // MARK: - Navigation
 
@@ -31,5 +31,8 @@ class Problem4ViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
-
+    
+    @IBAction func Problem4Run(sender: UIButton) {
+        Problem4Text.text = "Button Clicked."
+    }
 }

@@ -9,6 +9,7 @@
 import UIKit
 
 class Problem2ViewController: UIViewController {
+    @IBOutlet weak var Problem2Text: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,4 +33,7 @@ class Problem2ViewController: UIViewController {
     }
     */
 
+    @IBAction func Problem2Run(sender: UIButton) {
+        Problem2Text.text = "Button Clicked."
+    }
 }
